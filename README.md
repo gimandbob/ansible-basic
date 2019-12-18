@@ -26,12 +26,12 @@
     end
     ```
     3. Vagrant 실행
-    - 실행 중이었다면 재시작 필요 
-    ```bash
-    vagrant halt  #종료
-    vagrant up 
-    vagrant ssh
-    ```
+        - 실행 중이었다면 재시작 필요 
+        ```bash
+        vagrant halt  #종료
+        vagrant up 
+        vagrant ssh
+        ```
 5. ansible.cfg
     - Ansible 설정 INI 파일 -> 참조 파일 경로 변경, 환경변수 설정, 명령의 동작 변경 등
 6. 

@@ -64,7 +64,7 @@
     
 7. ansible 명령
     - 인벤토리의 호스트에 대해 모듈을 실행하는 명령 -> 인벤토리, 대상 호스트의 패턴, 실행할 모듈 지정 필요
-    - 서버에 SSH 로그인해서 명령을 실행하는 형태의 작업들을 자동화할 수 있게 해
+    - 서버에 SSH 로그인해서 명령을 실행하는 형태의 작업들을 자동화할 수 있게 해줌
     1) 대상 호스트 패턴
         : 인벤토리에서 어떤 호스트에 대해 처리할지 지정
         
@@ -94,6 +94,10 @@
         
         #에러!!!
         ansible soyoun-devops-ansible.dev -i hosts2 -m shell -a uname         
+        
+        #해결방법
+        1) /etc/hosts 파일에 hostname 설정
+        2) soyoun-devops-ansible.dev ansible_ssh_host=192.168.34.21
         
         ```
         

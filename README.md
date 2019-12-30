@@ -20,7 +20,7 @@
 
       Vagrant.configure("2") do |config|
         config.ssh.insert_key = false
-        config.vm.box = "bento/centos-7.1"
+        config.vm.box = "bento/centos-7"
         config.vm.network "private_network", ip: "192.168.34.21"
         config.vm.hostname = "soyoun-devops-ansible.dev"
       end
